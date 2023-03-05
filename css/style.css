@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* HEADER */
+
+#header{
+    width: 100%;
+    height: 1360px;
+
+    background-image: url(../imagens/header-backrgound.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 180px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.lista-menu{
+    display: flex;
+
+    margin: 20px 0 14px 26px;
+    gap: 26px;
+
+    font-weight: 750;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.menu.promo{
+    color: red;
+}
+
+.header-logo{
+    width: 120px;
+    height: 100px;
+}
+
+.lista-servicos{
+    display: flex;
+    align-items: center;
+
+    margin: 20px 0 14px 26px;
+    gap: 26px;
+
+    font-weight: 750;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.servico{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.dec{
+    height: 15px;
+    width: 15px;
+}
+
+/* BG COLEÇAO */
+
+#novacolecao{
+    width: 402px;
+    height: 218px;
+    border: 2px solid black;
+}
+
+.conteudo-novacolecao{
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    margin: 430px 0 0 65px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.periodo-colecao{
+    width: 188.48px;
+    height: 36.41px;
+    margin: 0 0 0 65px;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 750;
+    font-size: 14px;
+}
+
+.saudacao-modelo{
+    width: 401.76px;
+    height: 36.41px;
+
+    font-weight: 750;
+    font-size: 28px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 0 65px;
+}
+
+.btn-ver-colecao a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+    width: 266px;
+    height: 50px;
+    background-color: #000000;
+
+    margin: 0   0   0   132px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* LISTA DEPARTAMENTOS */
+
+.departamentos{
+    width: 100%;
+    height: 720px;
+
+    padding: 27px 60px 80px 60px;
+    margin: 0 0 80px 0; 
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.titulodepartamento{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.listadepartamentos{
+    width: 1300px;
+    height: 696px;
+
+    gap: 19px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.departamento-sandalias{
+    width: 614px;
+    height: 696px;
+
+    display: flex;
+
+    background-image: url(/imagens/departamentos-sandalias.png);
+}
+
+.nomeDepartamento{
+    width: 100%;
+    height: 61px;
+
+    margin: 615px 0 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase ;
+    color: #000000;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+.departamento-rasteiras{
+    width: 297.03px;
+    height: 696px;
+
+    display: flex;
+
+    background-image: url(/imagens/departamentos-rasteiras.png);
+}
+
+.departamento-chinelos{
+    width: 297.03px;
+    height: 696px;
+
+    display: flex;
+
+    background-image: url(/imagens/departamentos-chinelos.png);
+}
+
+/* MAIS AMADOS */
+
+.curtidos{
+    width: 100%;
+    height: 493px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.curtidos h3{
+    font-weight: 750;
+    font-size: 26px;
+    
+    text-transform: uppercase;
+}
+
+.container-itenscurtidos{
+    width: 1248px;
+    height: 436px;
+
+    margin: 21px 0 80px 0;
+}
+
+.itenscurtidos{
+    gap: 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    width: 297px;
+    height: 436px;;
+}
+
+.containerimagem{
+    width: 297px;
+    height: 340px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.containerimagem{
+    position: relative;
+    height: 340px;
+    width: 297px;
+}
+
+.capa-item{
+    height: 100%;
+    width: 100%;
+
+}
+
+.overlay-produto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: white;
+    
+    cursor: pointer;
+}
+
+.produto{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.capa-item:hover .overlay-produto{
+    opacity: 1;
+}
+
+.infoproduto{
+    width: 297px;
+    height: 96px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 5px 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.nomeproduto{
+    width:  90%;
+    height: 26px;
+    gap: 10px;
+
+    font-weight: 400;
+    font-size: 14px;
+
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+}
+
+.nome-produto{
+    display: flex;
+    justify-content: center;
+}
+
+.container-curtida{
+    position: relative;
+    width: 13px;
+    height: 13px;
+
+    display: flex;
+    justify-self: right;
+}
+
+.overlay-curtida{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: white;
+    
+    cursor: pointer;
+}
+
+.curtida{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.4s ease-in-out;
+    background-color: white;
+    
+}
+
+.container-curtida:hover .overlay-curtida{
+    opacity: 1;
+}
+
+.valores-produto{
+    width:  100%;
+    height: 26px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.valor{
+    font-weight: 750;
+    font-size: 14px;
+}
+
+.parcelamento{
+    width:  100%;
+    height: 26px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.valor-parcelamento{
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#newsletter{
+    width: 100%;
+    height: 138px;
+
+    background: #EDEDED;
+}
+
+.conteudo-newsletter{
+    padding: 30px 0 30px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-chamada{
+    width: 508px;
+    height: 26px;
+    margin-bottom: 20px;
+
+    font-weight: 750;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.sub-chamada{
+    width: 506px;
+    height: 26px;
+    
+    font-weight: 400;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro-email{
+    display: flex;
+}
+
+input{
+    width: 297px;
+    height: 50px;
+    padding: 0 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.btn-enviar-email{
+    width: 211px;
+    height: 50px;
+    left: -5px;
+
+    text-transform: uppercase;
+
+    color: white;
+    background: #000000;
+    border-radius: 0px 5px 5px 0px;
+
+    cursor: pointer;
+}
+
+/*MAPASITE*/
+
+#mapasite{
+    width: 100%;
+    height: 246px;
+
+    border-bottom: 1px solid #EDEDED;
+}
+
+.container-mapasite{
+    width: 100%;
+    height: 184px;
+    margin: 0 0 20px 0;
+    padding: 15px 0 0 0;
+    gap: 150px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.lista-departamentos-mapasite{
+    margin-top: 20px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-departamento-mapasite{
+    font-weight: 750;
+    font-size: 12px;
+    
+    text-transform: uppercase;
+}
+
+.item-mapasite{
+    font-weight: 400;
+    font-size: 14px;
+
+    display: flex;
+    text-transform: capitalize;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    height: 356px;
+    gap: 40px;
+
+    display: flex;
+
+    border-bottom: 1px solid #EDEDED;;
+}
+
+.conteudo-footer{
+    padding: 0 0 0 360px;
+    gap: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* REDES SOCIAIS */
+
+.imagem-logo{
+    width: 191px;
+    height: 150px;
+}
+
+.texto-seguir{
+    display: flex;
+    padding-left: 25px;
+    text-transform: uppercase;
+}
+
+.logo-redes{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lista-redes{
+    gap: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.lg-rede{
+    width: 20px;
+    height: 20px;
+}
+
+.twitter{
+    width: 24px;
+    height: 22px;
+}
+
+.facebook .pinterest{
+    width: 15px;
+    height: 22px;
+}
+
+/* LINKS SUPORTE E SOBRE */
+
+.links-footer{
+    gap: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.items-footer{
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-item-footer{
+
+    font-weight: 750;
+    font-size: 12px;
+
+    text-transform: uppercase;
+}
+
+.item-link{
+    font-weight: 400;
+    font-size: 14px;
+
+    text-transform: capitalize;
+}
+
+/* APPS */
+
+.apps{
+    padding-bottom: 70px;
+    gap: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-apps{
+    text-transform: uppercase;
+    font-weight: 750;
+    font-size: 12px;
+}
+
+.lista-aplicativos{
+    gap:15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.apple{
+    height: 26px;
+    width: 22px;
+}
+
+.googleplay{
+    height: 26;
+    width: 13px;
+}
+
+.aplicativo{
+    width: 191px;
+    height: 39px;
+    gap: 15px;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDEDED;
+    border-radius: 5px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+span{
+    text-transform: uppercase;
+    font-weight: 750;
+    font-size: 12px;
+}
+
+.conteudo-mapa{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-mapa{
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    font-weight: 750;
+    font-size: 12px;
+}
+
+.mapa{
+    width: 402px;
+    height: 141px;
+
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../imagens/footer-mapa.png);
+}
+
+.local-text{
+    width: 100%;
+    height: 40px;
+    margin-top: 90px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    
+    background: rgba(255, 255, 255, 0.7);
+
+    text-transform: uppercase;
+    font-weight: 750;
+    font-size: 12px;
+}
+
+/* TERMOS */
+
+.termos{
+    width: 100%;
+    height: 120px;
+}
+
+.lista-termos{
+    padding-top: 59px;
+    gap: 337px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.link-termos{
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 12px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
