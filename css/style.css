@@ -39,10 +39,25 @@ nav{
     background: rgba(255, 255, 255, 0.7);
 }
 
+
+.btn-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.btn-menu .btn-linha{
+    width: 30px;
+    height: 3px;
+
+    margin: 6px 0;
+
+    background-color: #000000;
+}
+
 .lista-menu{
     display: flex;
 
-    margin: 20px 0 14px 26px;
+    margin: 20px 0 14px 0;
     gap: 26px;
 
     font-weight: 750;
@@ -90,7 +105,6 @@ nav{
 #novacolecao{
     width: 402px;
     height: 218px;
-    border: 2px solid black;
 }
 
 .conteudo-novacolecao{
@@ -111,9 +125,11 @@ nav{
 
     display: flex;
     align-items: center;
+}
 
+.periodo-colecao p {
     font-weight: 750;
-    font-size: 14px;
+    font-size: 25px;
 }
 
 .saudacao-modelo{
@@ -142,6 +158,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-radius: 5px;
     
 }
 
@@ -165,12 +183,13 @@ nav{
 }
 
 .listadepartamentos{
-    width: 1300px;
+    width: 100%;
     height: 696px;
 
     gap: 19px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
@@ -262,8 +281,9 @@ nav{
 }
 
 .containerimagem{
-    width: 297px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px 5px 0px 0px;
 }
 
@@ -303,7 +323,7 @@ nav{
 }
 
 .infoproduto{
-    width: 297px;
+    width: 100%;
     height: 96px;
 
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -399,6 +419,8 @@ nav{
     font-size: 10px;
 }
 
+/* NEWSLETTER */
+
 #newsletter{
     width: 100%;
     height: 138px;
@@ -477,7 +499,7 @@ input{
     height: 184px;
     margin: 0 0 20px 0;
     padding: 15px 0 0 0;
-    gap: 150px;
+    gap: 100px;
 
     display: flex;
     justify-content: center;
@@ -514,17 +536,17 @@ footer{
     gap: 40px;
 
     display: flex;
+    justify-content: center;
 
     border-bottom: 1px solid #EDEDED;;
 }
 
 .conteudo-footer{
-    padding: 0 0 0 360px;
     gap: 50px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
 }
 
 /* REDES SOCIAIS */

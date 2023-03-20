@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arezzo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
 
 </head>
 
 <body>
     <div id="header">
         <div class="container-header">
+            
             <nav>
+                <label for="btn_check" class="btn-menu">
+                    <div class="btn-linha"></div>
+                    <div class="btn-linha"></div>
+                    <div class="btn-linha"></div>
+                </label>
+                <input type="checkbox" id="btn_check" hidden> 
                 <ul class="lista-menu">
                     <li><a href="#" class="menu">new in</a></li>
                     <li><a href="#" class="menu">sapatos</a></li>
@@ -29,14 +37,14 @@
     
                 <ul class="lista-servicos">
                     <li>
-                        <a href="#" class="servico"><img src="imagens/header-search.png" alt="" class="dec">buscar</a>
+                        <a href="#" class="servico serv1"><img src="imagens/header-search.png" alt="" class="dec">
+                            <span class="nomebtn">buscar</span></a>
                     </li>
-                    <li><a href="#" class="servico"><img src="imagens/header-localization.png" alt="" class="dec">
-                        localização</a></li>
-                    <li><a href="#" class="servico">entrar
+                    <li><a href="#" class="servico serv2"><img src="imagens/header-localization.png" alt="" class="dec"><span class="nomebtn">localização</span></a></li>
+                    <li><a href="#" class="servico serv3"><span class="nomebtn">entrar</span>
                         <img src="imagens/header-bag.png" alt="" class="dec">
                     </a></li>
-                </ul>
+                </ul> 
             </nav>
         </div>
 
@@ -74,8 +82,8 @@
             <li class="departamento-chinelos">
                 <div class="containerdepartamento">
                 </div>
-                <div class="nomeDepartamento">
-                    <p class="titulodepartamento">chinelos</p>
+                <div class="nomeDepartamento low_dep">
+                    <p class="titulodepartamento low_title">chinelos</p>
                 </div>
             </li>
         </ul>
@@ -84,8 +92,11 @@
     <section class="curtidos">
         <h3>mais amados</h3>
         <div class="container-itenscurtidos">
+            <button class="btnavancar">
+                <img src="" alt="">
+            </button>
             <ul class="itenscurtidos">
-                <li class="item">
+                <li class="item active">
                     <div class="containerimagem">
                         <div class="capa-item">
                             <img src="imagens/amado-sandalia1.png" alt="" class="imagemcapa">
@@ -119,7 +130,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="item">
+                <li class="item active">
                     <div class="containerimagem">
                         <div class="capa-item">
                             <img src="imagens/amado-sandalia2.png" alt="" class="imagemcapa">
@@ -222,6 +233,9 @@
                     </div>
                 </li>
             </ul>
+            <button class="btnvoltar">
+                <img src="" alt="">
+            </button>
         </div>
     </section>
 
